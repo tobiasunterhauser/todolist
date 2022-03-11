@@ -1,0 +1,25 @@
+
+<div class="row">
+  <div class="col-xl-4">
+    <h1>Lists</h1>
+    <ul>
+      <li *ngFor="let list of lists" [routerLink]="['/lists', list._id]">{{list.title}}</li>
+    </ul>
+    <button class="btn btn-info" routerLink="/new-list">Add List</button>
+  </div>
+  <div class="col-xl-4 ">
+    <h1>Tasks</h1>
+    <ul>
+      <!--<li *ngFor="Let task of tasks">{{task.title}}</li>
+      express api korrigieren product -> task
+
+
+      -->
+    </ul>
+    <div >
+      <button class="btn btn-info">Task hinzufügen</button>
+    </div>
+
+
+  </div>
+</div>
